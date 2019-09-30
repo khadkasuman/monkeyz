@@ -27,5 +27,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "deploy-node-app": {
+    "prod": {
+      "context": "kubesail-khadkasuman",
+      "registry": "index.docker.io/v1/",
+      "type": "spa",
+      "registryUsername": "khadkasuman",
+      "isPublic": true,
+      "domains": [
+        "monkeyz.tech"
+      ]
+    }
   }
 }

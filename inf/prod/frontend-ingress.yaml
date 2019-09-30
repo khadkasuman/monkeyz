@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: monkeyz-frontend
+spec:
+  rules:
+    - http:
+        paths:
+          - backend:
+              serviceName: monkeyz-frontend
+              servicePort: 8080
+      host: monkeyz.tech
+
